@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Quick Presentation for Dad</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- ADD THIS LINE FOR YOUR FAVICON -->
+    <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+
+    <div class="presentation-container">
+        
+        <!-- PAGE 1: Welcome -->
+        <section class="page active" id="page-1">
+            <h1>This Website is made by Abdisa Niguse for you...</h1>
+            <p class="subtitle">Please take 1 minute to click through. It's highly important!</p>
+            <button class="btn next-btn" onclick="nextPage(2)">Start Presentation ➔</button>
+        </section>
+
+        <!-- PAGE 2: The Sad Truth -->
+        <section class="page" id="page-2">
+            <h2>The Sad Reality... 😢</h2>
+            <div class="card">
+                <p>I have been wearing the exact same pair of shoes for an entire year now.</p>
+                <p></p>
+            </div>
+            <button class="btn next-btn" onclick="nextPage(3)">See the Evidence ➔</button>
+        </section>
+
+        <!-- PAGE 3: The Evidence -->
+        <section class="page" id="page-3">
+            <h2>Current Situation 📸</h2>
+            <p>My current shoes vs. my current financial status:</p>
+            <div class="image-grid">
+                <div class="image-card">
+                    <img src="old-shoes.jpg" alt="My only pair of shoes right now">
+                    <p class="caption">My only pair of shoes right now</p>
+                </div>
+                <div class="image-card">
+                    <img src="no-money.jpg" alt="Empty wallet">
+                    <p class="caption">My net worth: 0 Birr</p>
+                </div>
+            </div>
+            <button class="btn next-btn" onclick="nextPage(4)">The Solution ➔</button>
+        </section>
+
+        <!-- PAGE 4: The Shoes & Price -->
+        <section class="page" id="page-4">
+            <h2>The Vision 🌟</h2>
+            <p>I found the perfect replacement pair. Stylish, durable, and ready to go!</p>
+            <div class="product-card">
+                <img src="new-shoes.jpg" alt="The dream shoes" class="product-img">
+                <div class="product-info">
+                    <h3>The Dream Shoes</h3>
+                    <span class="price">4,000 Birr</span>
+                </div>
+            </div>
+            <button class="btn next-btn" onclick="nextPage(5)">A Final Word ➔</button>
+        </section>
+
+       <!-- PAGE 5: The Ultimate Choice -->
+<section class="page" id="page-5">
+    <h2>Decision Time, Dad! </h2>
+    <div class="thank-you-box" id="question-box">
+        <p>So, what do you say? Can we get the new shoes?</p>
+        
+        <!-- The Decision Buttons -->
+        <div class="decision-container">
+            <button class="btn ok-btn" id="ok-btn" onclick="acceptDeal()">OK</button>
+            <button class="btn no-btn" id="no-btn">No</button>
+        </div>
+    </div>
+
+    <!-- Hidden Thank You Screen (Shows after clicking OK) -->
+    <div class="success-screen hidden" id="success-screen">
+        <h2>THANK YOU, DAD! </h2>
+        <h3>You are The Best</h3>
+        <p1>If you Need Website For your Work I can do it for you </p1>
+        
+    </div>
+</section>
+
+    <script src="script.js"></script>
+</body>
+</html>
